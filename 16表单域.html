@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单域</title>
+</head>
+<body>
+    <p>表单域就是form标签</p>
+    <p>input 为单标签</p>
+    <form action="zsy.php" method="GET" name="name1"><!-- text 文本框 用户可以里面输入任何文字 -->
+        用户名：<input type="text" name="A" value="大越子" maxlength="6">  <br>
+        密码：&nbsp;&nbsp;<input type="password" name="B"> <br>
+        <!-- password 密码框 用户看不见输入的密码 -->
+        性别：男<input type="radio" name="sex" value="男">女<input type="radio" name="sex" checked="checked"> <br>
+        <!-- radio 为单选按钮，可以实现多选 -->
+        <!-- name是表单元素的名字 这么性别单选按钮必须有相同的名字name 才可以实现多选一 -->
+        爱好：吃饭<input type="checkbox" name="hobby">睡觉<input type="checkbox" name="hobby">打豆豆<input type="checkbox" name="hobby"> <br>
+        <!-- checkbox 复选框 可以实现多选效果 -->
+        <!-- name ，要求单选按钮和复选框要有相同的name值 -->
+        <!-- value作用于单选按钮或复选框时不会显示 -->
+        <input type="submit" value="请付费后提交">
+        <!-- 点击了提交按钮，可以把表单域的form里面的表单元素 里面的值 提交给后台服务器 -->
+        <input type="reset" value="不要乱按，小心后悔">
+        <!-- 重置按钮可以还原表单元素初始的默认状态 -->
+        <input type="button" value="点击解压"> <br>
+        <!-- button与后期搭配js使用，比如发生验证码之类 -->
+        上传头像：<input type="file" value="上传照片">
+        <!-- 文件域 使用场景 上传文件使用 -->
+    </form>
+    <h1>text 表示输入文本</h1>
+    <h1>passw 表示输入看不见的密码</h1>
+    <h1>radio 单选按钮 可实现多选</h1>
+    <h1>checkbox 复选框 方框</h1>
+    <h1>若要单选 则在radio后添加name</h1>
+    <p><img src="input的type属性.png" width="500"></p>
+</body>
+</html>
